@@ -1,50 +1,55 @@
 
 
-
-.products
-  table {
-    border-collapse: collapse;
+/* START_HIGHLIGHT */
+#banner {
+  background: #9c9;
+  padding: 10px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #282;
+  text-align: center;
+}
+  img {
+    float: left;
   }
 
-  table tr td {
-    padding: 5px;
-    vertical-align: top;
+
+#notice {
+  color: #000 !important;
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+
+#columns {
+  background: #141;
+
+}
+  #main {
+    margin-left: 17em;
+    padding: 1em;
+    background: white;
   }
 
-  .list_image {
-    width:  60px;
-    height: 70px;
-  }
+  #side {
+    float: left;
+    padding: 1em 2em;
+    width: 9em;
+    background: #141;
 
-  .list_description {
-    width: 60%; }
-    dl {
-      margin: 0;
+  }
+    ul {
+      padding: 0;
     }
-
-    dt {
-      color:        #244;
-      font-weight:  bold;
-      font-size:    larger;
-    }
-
-    dd {
-      margin: 0;
-    }
+      li {
+        list-style: none;
+      }
+        a {
+          color: #9acd32;
+          font-size: small;
+        }
 
 
-  .list_actions {
-    font-size:    x-small;
-    text-align:   right;
-    padding-left: 1em;
-  }
-
-  .list_line_even {
-    background:   #e0f8f8;
-  }
-
-  .list_line_odd {
-    background:   #f8b0f8;
-  }
-
-
+/* END_HIGHLIGHT */
