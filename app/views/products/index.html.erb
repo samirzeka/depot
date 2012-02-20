@@ -13,13 +13,13 @@
 
         <dt><%= product.title %></dt>
         <dd><%= truncate(strip_tags(product.description),
-               :length => 80) %></dd>
+               :length => 65) %></dd>
       </dl>
     </td>
 
     <td class="list_actions">
-      <%= link_to 'Show', product %><br/>
-      <%= link_to 'Edit', edit_product_path(product) %><br/>
+      <br/><%= link_to 'Show', product %><br/><br/>
+      <%= link_to 'Edit', edit_product_path(product) %><br/><br/>
 
       <%= link_to 'Destroy', product, 
                   :confirm =>  'Are you sure?',
