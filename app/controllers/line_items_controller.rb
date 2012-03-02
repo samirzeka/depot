@@ -39,11 +39,12 @@ class LineItemsController < ApplicationController
 
     @cart = current_cart
     product = Product.find(params[:product_id])
+    raise params[:product_id].inspect
     #@line_item = @cart.line_items.build(:product => product)
     @line_item = @cart.add_product(product.id)
     respond_to do |format|
       if @line_item.save
-        format.html { redirect_to @line_item.cart, :notice => 'Line item was successfully created.' }
+        format.html { redirect_to @cart, :notice => 'Line item was successfully created.' }
         format.json { render :json => @line_item, :status => :created, :location => @line_item }
       else
         format.html { render :action => "new" }
@@ -77,4 +78,5 @@ class LineItemsController < ApplicationController
       format.json { head :ok }
     end
   end
+
 end

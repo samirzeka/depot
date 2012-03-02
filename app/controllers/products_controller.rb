@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
 
   def index
     @products = Product.all
-
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @products }
@@ -70,7 +70,6 @@ class ProductsController < ApplicationController
       end
     end
   end
-
 
 
 
